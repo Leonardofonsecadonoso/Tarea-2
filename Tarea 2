@@ -1,0 +1,31 @@
+ #include <stdio.h>
+#include <math.h>
+#define PI 3.14159265358979323846
+
+double gradosARadianes(double grados)
+{
+    return grados * PI / 180;
+ 
+ double distanciadoble(double lat1, double lon1, double lat2, double lon2)
+ 
+ 
+ 
+ double RADIO_TIERRA_EN_KILOMETROS = 6371;
+    double diferenciaEntreLongitudes = (lon2 - lon1);
+    double diferenciaEntreLatitudes = (lat2 - lat1);
+    double a = pow(sin(diferenciaEntreLatitudes / 2.0), 2) + cos(lat1) * cos(lat2) * pow(sin(diferenciaEntreLongitudes / 2.0), 2);
+    double c = 2 * atan2(sqrt(a), sqrt(1 - a));
+    double d = RADIO_TIERRA_EN_KILOMETROS * c;
+    return d;
+ 
+ 
+ 
+ 
+ 
+ lat1 = gradosARadianes(lat1);
+    distancia1 = gradosARadianes(distancia1);
+    distancia2 = gradosARadianes(distancia2);
+    distancia3 = gradosARadianes(distancia3);
+    
+   double distanciadoble(double lat1, double lon1, double lat2, double lon2)
+{
